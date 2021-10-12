@@ -1,7 +1,7 @@
 {
   "name": "node-jasper-th",
-  "version": "0.1.1",
-  "description": "Use to render and bind jrxml file with data from node application",
+  "version": "0.1.2",
+  "description": "Use to render and bind jrxml file with data from node application (UTF-16 supported)",
   "main": "index.js",
   "scripts": {
     "test": "node runTest.js"

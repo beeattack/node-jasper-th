@@ -1,8 +1,8 @@
 # node-jasper-th
 
-JasperReports within Node.js
+JasperReports within Node.js and UTF-16 encoding
 ## Downloads
-jasperreports-6.17.0-project.tar.gz
+no need to download, jasperreports-6.17.0-project.tar.gz is embedded in lib
 
 ## Install
 if you don't have a java
@@ -26,7 +26,6 @@ Where _options_ is an object with the following signature:
 
 ```
 options: {
-	path: , //Path to jasperreports-x.x.x directory (from jasperreports-x.x.x-project.tar.gz)
 	reports: {
  		// Report Definition
  		"name": {
@@ -141,6 +140,7 @@ var express = require('express'),
 			report: 'hw',
 			data: {
 				id: parseInt(req.query.id, 10)
+				// jasper.toJsonDataSource is modified to convert to UTF-16
 				secundaryDataset: jasper.toJsonDataSource({
 					data: ...
 				},'data')
@@ -195,6 +195,7 @@ var express = require('express'),
 			report: 'hw',
 			data: {
 				id: parseInt(req.query.id, 10)
+				// jasper.toJsonDataSource is modified to convert to UTF-16
 				secundaryDataset: jasper.toJsonDataSource({
 					data: ...
 				},'data')
@@ -266,6 +267,7 @@ var express = require('express'),
 			report: 'hw',
 			data: {
 				id: parseInt(req.query.id, 10)
+				// jasper.toJsonDataSource is modified to convert to UTF-16
 				secundaryDataset: jasper.toJsonDataSource({
 					data: ...
 				},'data')

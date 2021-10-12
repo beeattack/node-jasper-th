@@ -89,7 +89,8 @@ function jasper(options) {
     }
     var self = this;
     self.parentPath = path.dirname(module.parent.filename);
-    var jrPath = path.resolve(self.parentPath, options.path||'.');
+    //var jrPath = path.resolve(self.parentPath, options.path||'.');
+    var jrPath = `${__dirname}/asset/lib/jasperreport-6.17.0`;
     async.auto({
         jrJars: function(cb) {
             if(fs.statSync(path.join(jrPath, 'lib')).isDirectory() && fs.statSync(path.join(jrPath, 'dist')).isDirectory()) {
