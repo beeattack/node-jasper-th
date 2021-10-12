@@ -1,4 +1,4 @@
-# node-jasper
+# node-jasper-th
 
 JasperReports within Node.js
 ## Downloads
