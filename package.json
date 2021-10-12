@@ -1,0 +1,35 @@
+{
+  "name": "node-jasper-th",
+  "version": "0.1.0",
+  "description": "Use to render and bind jrxml file with data from node application",
+  "main": "index.js",
+  "scripts": {
+    "test": "node runTest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/beeattack/node-jasper-th.git"
+  },
+  "keywords": [
+    "jasper",
+    "jasper-report",
+    "xlsx",
+    "pdf",
+    "jrxml",
+    "docx"
+  ],
+  "author": "Devpool",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beeattack/node-jasper-th/issues"
+  },
+  "homepage": "https://github.com/beeattack/node-jasper-th#readme",
+  "dependencies": {
+    "async": "^0.9.2",
+    "cli-progress": "^3.9.0",
+    "extend": "^3.0.2",
+    "nodejs-java-dp": "^1.0.0",
+    "temp": "^0.9.4"
+  },
+  "devDependencies": {}
+}
