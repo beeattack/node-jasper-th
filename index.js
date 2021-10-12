@@ -558,14 +558,12 @@ jasper.prototype.compileSync = function (jrxmlFile, dstFolder) {
     return file;
 };
 
-jasper.prototype.toJsonDataSource = function (dataset,query) {
+jasper.prototype.toJsonDataSource = function (dataset, query) {
     var self = this;
     var jsonString = JSON.stringify(dataset);
-    var byteArray = java.newArray('byte', jsonString.split('').map(function(c, i) {
-        return java.newByte(jsonString.charCodeAt(i));
-    }));
-    return new self.jrjsonef(new self.jbais(byteArray), query || '');
-}
+    var is = java.callStaticMethodSync("com.jdea.dental.StringToByteArray", "GetInputstream", jsonString);
+    return new self.jrjsonef(is, query || '');
+  }
 
 module.exports = function(options) {
     return new jasper(options)

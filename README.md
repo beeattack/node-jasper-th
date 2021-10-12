@@ -2,8 +2,7 @@
 
 JasperReports within Node.js
 ## Downloads
-https://epwt-www.mybluemix.net/software/support/trial/cst/programwebsite.wss?siteId=854&h=null&p=null
-https://sourceforge.net/projects/jasperreports/files/archive/jasperreports/JasperReports%206.1.0/jasperreports-6.1.0-project.tar.gz/download
+jasperreports-6.17.0-project.tar.gz
 
 ## Install
 if you don't have a java
